@@ -13,7 +13,7 @@ angular.module("ngTouch", [])
       };
       
       function onTouchMove(event) {
-          var method = '$scope.' + $element.context.getAttribute('ng-touchmove');
+          var method = '$scope.' + $element.attr('ng-touchmove');
           $scope.$apply(function () {
               eval(method);
           });
@@ -33,7 +33,7 @@ angular.module("ngTouch", [])
       $element.bind('touchstart', onTouchStart);
       
       function onTouchStart(event) {
-        var method = '$scope.' + $element.context.getAttribute('ng-touchstart');
+        var method = '$scope.' + $element.attr('ng-touchstart');
         $scope.$apply(function () {
           eval(method);
         });
@@ -47,7 +47,7 @@ angular.module("ngTouch", [])
       $element.bind('touchend', onTouchEnd);
       
       function onTouchEnd(event) {
-        var method = '$scope.' + $element.context.getAttribute('ng-touchend');
+        var method = '$scope.' + $element.attr('ng-touchend');
         $scope.$apply(function () {
           eval(method);
         });
