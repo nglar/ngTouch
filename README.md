@@ -13,6 +13,6 @@ Then in your HTML you can use:
 
 # Standalones
 You can get the standalones dependencies used in this module:
-- [ngTouchmove](https://github.com/marktopper/ngTouchmove)
-- [ngTouchstart](https://github.com/marktopper/ngTouchstart)
-- [ngTouchend](https://github.com/marktopper/ngTouchend)
+- [ngTouchmove](https://github.com/nglar/ngTouchmove)
+- [ngTouchstart](https://github.com/nglar/ngTouchstart)
+- [ngTouchend](https://github.com/nglar/ngTouchend)
