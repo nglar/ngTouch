@@ -1,60 +1,52 @@
 "use strict";
 
 angular.module("ngTouch", [])
-.directive("ngTouchmove", function ($parse) {
-  return {
-    controller: function ($scope, $element, $attrs) {
-      var eventHandler = $parse($attrs.ngTouchmove);
-      $element.bind('touchstart', onTouchStart);
+.directive("ngTouchstart", function () {
+    return {
+        controller: ["$scope", "$element", function ($scope, $element) {
 
-      function onTouchStart(event) {
-        event.preventDefault();
-        $element.bind('touchmove', onTouchMove);
-        $element.bind('touchend', onTouchEnd);
-      };
+            $element.bind("touchstart", onTouchStart);
+            function onTouchStart(event) {
+                var method = $element.attr("ng-touchstart");
+                $scope.$apply(method);
+            }
 
-      function onTouchMove(event) {
-          $scope.$apply(function () {
-              eventHandler($scope, {$event: event});
-          });
-      };
-
-      function onTouchEnd(event) {
-        event.preventDefault();
-        $element.unbind('touchmove', onTouchMove);
-        $element.unbind('touchend', onTouchEnd);
-      };
+        }]
     }
-  };
 })
-.directive("ngTouchstart", function ($parse) {
-  return {
-    controller: function ($scope, $element, $attrs) {
+.directive("ngTouchmove", function () {
+    return {
+        controller: ["$scope", "$element", function ($scope, $element) {
 
-      var eventHandler = $parse($attrs.ngTouchstart);
-      $element.bind('touchstart', onTouchStart);
+            $element.bind("touchstart", onTouchStart);
+            function onTouchStart(event) {
+                event.preventDefault();
+                $element.bind("touchmove", onTouchMove);
+                $element.bind("touchend", onTouchEnd);
+            }
+            function onTouchMove(event) {
+                var method = $element.attr("ng-touchmove");
+                $scope.$apply(method);
+            }
+            function onTouchEnd(event) {
+                event.preventDefault();
+                $element.unbind("touchmove", onTouchMove);
+                $element.unbind("touchend", onTouchEnd);
+            }
 
-      function onTouchStart(event) {
-        $scope.$apply(function () {
-          eventHandler($scope, {$event: event});
-        });
-      };
+        }]
     }
-  };
 })
-.directive("ngTouchend", function ($parse) {
-  return {
-    controller: function ($scope, $element, $attrs) {
+.directive("ngTouchend", function () {
+    return {
+        controller: ["$scope", "$element", function ($scope, $element) {
 
-      var eventHandler = $parse($attrs.ngTouchend);
-      $element.bind('touchend', onTouchEnd);
+            $element.bind("touchend", onTouchEnd);
+            function onTouchEnd(event) {
+                var method = $element.attr("ng-touchend");
+                $scope.$apply(method);
+            }
 
-      function onTouchEnd(event) {
-
-        $scope.$apply(function () {
-          eventHandler($scope, {$event: event});
-        });
-      };
+        }]
     }
-  };
 });
