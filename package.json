@@ -1,0 +1,28 @@
+{
+  "name": "ngtouch",
+  "version": "1.0.0",
+  "description": "An angular module to add directives for touch devices",
+  "main": "ngTouch.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nglar/ngTouch.git"
+  },
+  "keywords": [
+    "ngtouch",
+    "touch",
+    "angular",
+    "js"
+  ],
+  "author": "Mark Topper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nglar/ngTouch/issues"
+  },
+  "homepage": "https://github.com/nglar/ngTouch#readme"
+}
