@@ -9,9 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies" : {
-    "angularjs" : "1.4.0-beta.0",
-    },
+  "devDependencies": {
+    "angular": "^1.4.5"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nglar/ngTouch.git"
