@@ -9,6 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "devDependencies" : {
+    "angularjs" : "1.4.0-beta.0",
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nglar/ngTouch.git"
@@ -20,7 +23,7 @@
     "js"
   ],
   "author": "Mark Topper",
-  "license": "ISC",
+  "license": "",
   "bugs": {
     "url": "https://github.com/nglar/ngTouch/issues"
   },
