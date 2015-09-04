@@ -10,7 +10,9 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "angular": "^1.4.5"
+    "angular": "^1.4.5",
+    "jasmine": "^2.3.2",
+    "jasmine-jquery": "^2.1.0"
   },
   "repository": {
     "type": "git",
