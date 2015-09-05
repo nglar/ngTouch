@@ -1,10 +1,16 @@
 var 	gulp = require('gulp'),
 	// Server = require('karma').Server,
-	karma = require('gulp-karma')
+	karma = require('gulp-karma'),
+	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename');
 
 
 
-gulp.task('build', function(done) {	
+gulp.task('build', function(done) {
+	return gulp.src('ngTouch.js')
+		.pipe(uglify())
+		.pipe(rename('ngTouch.min.js'))
+		.pipe(gulp.dest('build'));
 });
 
 /**
