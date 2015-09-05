@@ -12,7 +12,10 @@
   "devDependencies": {
     "angular": "^1.4.5",
     "jasmine": "^2.3.2",
-    "jasmine-jquery": "^2.1.0"
+    "jasmine-jquery": "^2.1.0",
+    "karma": "^0.13.9",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18"
   },
   "repository": {
     "type": "git",
