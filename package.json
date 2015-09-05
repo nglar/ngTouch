@@ -11,10 +11,20 @@
   },
   "devDependencies": {
     "angular": "^1.4.5",
+    "angular-mocks": "^1.4.5",
+    "gulp": "^3.9.0",
+    "gulp-jasmine": "^2.0.1",
+    "gulp-karma": "0.0.4",
     "jasmine": "^2.3.2",
+    "jasmine-core": "^2.3.4",
     "jasmine-jquery": "^2.1.0",
     "karma": "^0.13.9",
+    "karma-browserify": "^4.3.0",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "^0.3.6",
     "karma-phantomjs-launcher": "^0.2.1",
+    "karma-safari-launcher": "^0.1.1",
+    "karma-spec-reporter": "0.0.20",
     "phantomjs": "^1.9.18"
   },
   "repository": {
