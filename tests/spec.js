@@ -28,7 +28,7 @@ describe('ngTouch', function () {
 		expect($rootScope.moved).toEqual(true);
 	}));
 
-	it('should get called touchend', inject(function($rootScope, $compile) {
+	it('should get called on touchend', inject(function($rootScope, $compile) {
 		element =  $compile('<div ng-touchend= "ended  = true"></div>')($rootScope);
 		$rootScope.$digest();
 		expect($rootScope.ended).toBeUndefined();
