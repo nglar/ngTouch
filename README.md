@@ -23,3 +23,5 @@ You can get the standalones dependencies used in this module:
 ```
 gulp test
 ```
+
+[![Build Status](https://travis-ci.org/aliirz/ngTouch.svg?branch=master)](https://travis-ci.org/aliirz/ngTouch)
