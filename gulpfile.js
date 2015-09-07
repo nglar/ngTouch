@@ -6,7 +6,7 @@ var 	gulp = require('gulp'),
 
 
 gulp.task('build', function(done) {
-	return gulp.src('ngTouch.js')
+	return gulp.src('src/ngTouch.js')
 		.pipe(uglify())
 		.pipe(rename('ngTouch.min.js'))
 		.pipe(gulp.dest('build'));
