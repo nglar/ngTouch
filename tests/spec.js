@@ -9,7 +9,7 @@ describe('ngTouch', function () {
 		module('ngTouch');
 	});
 
-	it('should get called on a touchstart', inject(function($rootScope, $compile) {
+	it('should get called on touchstart', inject(function($rootScope, $compile) {
 		element = $compile('<div ng-touchstart="started = true"></div>')($rootScope);
 		$rootScope.$digest();
 		expect($rootScope.started).toBeUndefined();
