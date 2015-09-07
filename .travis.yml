@@ -1,9 +1,9 @@
-+language: node_js
-+node_js:
-+    - "0.12.5"
-+script: gulp test
-+before_install:
-+    - export DISPLAY=:99.0
-+    - sh -e /etc/init.d/xvfb start
-+before_script:
-+    - npm install
+language: node_js
+node_js:
+    - "0.12.5"
+script: gulp test
+before_install:
+    - export DISPLAY=:99.0
+    - sh -e /etc/init.d/xvfb start
+before_script:
+    - npm install
