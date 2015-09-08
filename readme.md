@@ -4,6 +4,10 @@ A angular module to add directives for touch devices.
 
 [![Build Status](https://travis-ci.org/nglar/ngTouch.svg?branch=master)](https://travis-ci.org/nglar/ngTouch)
 [![StyleCI Status](https://styleci.io/repos/30239827/shield?style=flat)](https://styleci.io/repos/30239827)
+[![Total Downloads](https://img.shields.io/github/downloads/nglar/ngTouch/latest/total.svg)](https://github.com/nglar/ngTouch)
+[![Dependencies](https://img.shields.io/david/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch)
+[![Dev Dependencies](https://img.shields.io/david/dev/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch)
+[![License](https://img.shields.io/bower/l/bootstrap.svg)](https://github.com/nglar/ngTouch)
 [![Issues](https://img.shields.io/github/issues/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch/issues)
 [![Forks](https://img.shields.io/github/forks/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch/network)
 [![GitHub stars](https://img.shields.io/github/stars/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch/stargazers)
