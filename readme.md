@@ -47,7 +47,7 @@ bower install ngtouch --save
 
 Load the file to you HTML header:
 ```
-<script type="text/javascript" src="path/to/bower_components/ngtouch/src/ngTouch.js"></script>
+<script type="text/javascript" src="path/to/bower_components/ngtouch/build/ngTouch.min.js"></script>
 ```
 
 ## Usage
