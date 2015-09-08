@@ -41,7 +41,7 @@
     "angular",
     "js"
   ],
-  "author": "Mark Topper",
+  "author": "Mark Topper <mail@webman.io>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/nglar/ngTouch/issues"
