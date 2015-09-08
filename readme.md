@@ -36,6 +36,18 @@ Email: [mark@webman.io](mailto:mark@webman.io)
 
 ## Installing/Loading
 
+Install using bower:
+```
+bower install ngtouch --save
+```
+
+Load the file to you HTML header:
+```
+<script type="text/javascript" src="path/to/bower_components/ngtouch/src/ngTouch.js"></script>
+```
+
+## Usage
+
 You must include the ngTouch dependency on your angular module:
 ````
 var app = angular.module("demoapp", ["ngTouch"]);
@@ -45,21 +57,65 @@ Then in your HTML you can use:
 <div ng-touchmove="someFunction($event)" ng-touchstart="someFunction($event)" ng-touchend="someFunction($event)"></div>
 ````
 
-## Usage
-
-Coming
-
 #### ng-touchstart
 
-Coming
+Once a touch device start touching, this event will be called.
+
+Here is a usage example:
+
+> yourController.js
+```
+$scope.onTouchstart = function($event) {
+   console.log('touchstart event called');
+}
+```
+
+> yourView.html
+```
+<div ng-touchstart="onTouchstart($event)"></div>
+```
+
+[__Get ngTouchstart standalone.__](https://github.com/nglar/ngTouchstart)
 
 #### ng-touchend
 
-Coming
+Once a touch device end touching, this event will be called.
+
+Here is a usage example:
+
+> yourController.js
+```
+$scope.onTouchend = function($event) {
+   console.log('touchend event called');
+}
+```
+
+> yourView.html
+```
+<div ng-touchend="onTouchend($event)"></div>
+```
+
+[__Get ngTouchend standalone.__](https://github.com/nglar/ngTouchend)
 
 #### ng-touchmove
 
-Coming
+Whenever a a touch device is touched and moving.
+
+Here is a usage example:
+
+> yourController.js
+```
+$scope.onTouchmove = function($event) {
+   console.log('touchmove event called');
+}
+```
+
+> yourView.html
+```
+<div ng-touchmove="onTouchmove($event)"></div>
+```
+
+[__Get ngTouchmove standalone.__](https://github.com/nglar/ngTouchmove)
 
 ## Links
 
