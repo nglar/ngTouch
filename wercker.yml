@@ -1,9 +1,0 @@
-# The container definition we want to use for developing our app
-box: nodesource/trusty
-# Defining the dev pipeline
-dev:
-  steps:
-    - npm-install
-    - internal/watch:
-        code: node app.js
-        reload: true
