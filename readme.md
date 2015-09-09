@@ -7,7 +7,7 @@ A angular module to add directives for touch devices.
 [![Total Downloads](https://img.shields.io/github/downloads/nglar/ngTouch/latest/total.svg)](https://github.com/nglar/ngTouch)
 [![Dependencies](https://img.shields.io/david/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch)
 [![Dev Dependencies](https://img.shields.io/david/dev/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch)
-[![License](https://img.shields.io/bower/l/bootstrap.svg)](https://github.com/nglar/ngTouch)
+[![License](https://img.shields.io/bower/l/ngtouch.svg)](https://github.com/nglar/ngTouch)
 [![Issues](https://img.shields.io/github/issues/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch/issues)
 [![Forks](https://img.shields.io/github/forks/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch/network)
 [![GitHub stars](https://img.shields.io/github/stars/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch/stargazers)
@@ -103,7 +103,7 @@ $scope.onTouchend = function($event) {
 
 #### ng-touchmove
 
-Whenever a a touch device is touched and moving.
+Whenever a touch device is touched and moving.
 
 Here is a usage example:
 
