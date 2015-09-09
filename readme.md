@@ -129,7 +129,7 @@ The following is a list of libraries that extend ngTouch:
 
 *Contact me at [mark@webman.io](mailto:mark@webman.io) to get yours added.*
 
-The following is a list of libraries that requires by SmartObject:
+The following is a list of libraries that requires by ngTouch:
 
  * [Angular](https://github.com/angular/angular.js):
 HTML enhanced for web apps
