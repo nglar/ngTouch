@@ -1,6 +1,6 @@
 {
   "name": "ngtouch",
-  "version": "1.0.0",
+  "version": "1.0",
   "description": "An angular module to add directives for touch devices",
   "main": "src/ngTouch.js",
   "directories": {
