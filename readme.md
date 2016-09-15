@@ -74,7 +74,7 @@ var app = angular.module("demoapp", ["ngTouch"]);
 ````
 Then in your HTML you can use:
 ````
-<div ng-touchmove="someFunction($event)" ng-touchstart="someFunction($event)" ng-touchend="someFunction($event)"></div>
+<div ng-touchmove="someFunction()" ng-touchstart="someFunction()" ng-touchend="someFunction()"></div>
 ````
 
 #### ng-touchstart
@@ -85,14 +85,16 @@ Here is a usage example:
 
 > yourController.js
 ```
-$scope.onTouchstart = function($event) {
+$scope.onTouchstart = function() {
+   console.log($scope.event); // the event object
+
    console.log('touchstart event called');
 }
 ```
 
 > yourView.html
 ```
-<div ng-touchstart="onTouchstart($event)"></div>
+<div ng-touchstart="onTouchstart()"></div>
 ```
 
 [__Get ngTouchstart standalone.__](https://github.com/nglar/ngTouchstart)
@@ -105,14 +107,16 @@ Here is a usage example:
 
 > yourController.js
 ```
-$scope.onTouchend = function($event) {
+$scope.onTouchend = function() {
+   console.log($scope.event); // the event object
+   
    console.log('touchend event called');
 }
 ```
 
 > yourView.html
 ```
-<div ng-touchend="onTouchend($event)"></div>
+<div ng-touchend="onTouchend()"></div>
 ```
 
 [__Get ngTouchend standalone.__](https://github.com/nglar/ngTouchend)
@@ -125,14 +129,16 @@ Here is a usage example:
 
 > yourController.js
 ```
-$scope.onTouchmove = function($event) {
+$scope.onTouchmove = function() {
+   console.log($scope.event); // the event object
+   
    console.log('touchmove event called');
 }
 ```
 
 > yourView.html
 ```
-<div ng-touchmove="onTouchmove($event)"></div>
+<div ng-touchmove="onTouchmove()"></div>
 ```
 
 [__Get ngTouchmove standalone.__](https://github.com/nglar/ngTouchmove)
