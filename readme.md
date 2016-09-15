@@ -87,7 +87,6 @@ Here is a usage example:
 ```
 $scope.onTouchstart = function() {
    console.log($scope.event); // the event object
-
    console.log('touchstart event called');
 }
 ```
@@ -109,7 +108,6 @@ Here is a usage example:
 ```
 $scope.onTouchend = function() {
    console.log($scope.event); // the event object
-   
    console.log('touchend event called');
 }
 ```
@@ -131,7 +129,6 @@ Here is a usage example:
 ```
 $scope.onTouchmove = function() {
    console.log($scope.event); // the event object
-   
    console.log('touchmove event called');
 }
 ```
