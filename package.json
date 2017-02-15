@@ -1,6 +1,6 @@
 {
   "name": "ngtouch",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An angular module to add directives for touch devices",
   "main": "src/ngTouch.js",
   "directories": {
@@ -29,7 +29,7 @@
     "karma-phantomjs-launcher": "^0.2.1",
     "karma-safari-launcher": "^0.1.1",
     "karma-spec-reporter": "0.0.20",
-    "phantomjs": "^1.9.18"
+    "phantomjs-polyfill": "0.0.2"
   },
   "repository": {
     "type": "git",
