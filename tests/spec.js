@@ -34,4 +34,24 @@ describe('ngTouch', function () {
 		element.triggerHandler('touchend');
 		expect($rootScope.ended).toEqual(true);
 	}));
+
+	it('should get called on tap', inject(function($rootScope, $compile) {
+		element =  $compile('<div ng-tap="itHappened = true"></div>')($rootScope);
+		$rootScope.$digest();
+		expect($rootScope.itHappened).toBeUndefined();
+		element.triggerHandler('touchstart');
+		element.triggerHandler('touchend');
+		expect($rootScope.itHappened).toEqual(true);
+	}));
+
+	it('should not get called on tap', inject(function($rootScope, $compile) {
+		element =  $compile('<div ng-tap="itHappened = true"></div>')($rootScope);
+		$rootScope.$digest();
+		expect($rootScope.itHappened).toBeUndefined();
+		element.triggerHandler('touchstart');
+		element.triggerHandler('touchmove');
+		element.triggerHandler('touchend');
+		expect($rootScope.itHappened).toBeUndefined();
+	}));
+
 });
