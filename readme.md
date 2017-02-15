@@ -19,6 +19,7 @@ A angular module to add directives for touch devices.
     * [ng-touchstart](#ng-touchstart)
     * [ng-touchend](#ng-touchend)
     * [ng-touchmove](#ng-touchmove)
+    * [ng-tap](#ng-nap)
 * [Links](#links)
 * [Tests](#tests)
 * [Contributing](#contributing)
@@ -27,7 +28,7 @@ A angular module to add directives for touch devices.
 
 ## Info
 
-Version: 1.0.1    
+Version: 1.0.2    
 Author: Mark Topper [[Facebook](https://facebook.com/marktopper)] [[Github](https://github.com/marktopper)] [[Twitter](https://twitter.com/webman.io)]    
 Website: [ulties.com](https://ulties.com)    
 Email: [mark@ulties.com](mailto:mark@ulties.com)
@@ -131,6 +132,27 @@ $scope.onTouchmove = function() {
 
 [__Get ngTouchmove standalone.__](https://github.com/nglar/ngTouchmove)
 
+#### ng-tap
+
+Whenever a touch device is tapped without moved around.
+
+Here is a usage example:
+
+> yourController.js
+```
+$scope.onTap = function() {
+   console.log($scope.event); // the event object
+   console.log('tap event called');
+}
+```
+
+> yourView.html
+```
+<div ng-tap="onTap()"></div>
+```
+
+[__Get ngTap standalone.__](https://github.com/nglar/ngTap)
+
 ## Links
 
 The following is a list of libraries that extend ngTouch:
@@ -153,6 +175,9 @@ A angular module to add directive `ng-touchstart`.
 
 * [ngTouchend](https://github.com/nglar/ngTouchend):
 A angular module to add directive `ng-touchend`.
+
+* [ngTap](https://github.com/nglar/ngTap):
+A angular module to add directive `ng-tap`.
 
 ## Tests
 
