@@ -19,7 +19,7 @@ A angular module to add directives for touch devices.
     * [ng-touchstart](#ng-touchstart)
     * [ng-touchend](#ng-touchend)
     * [ng-touchmove](#ng-touchmove)
-    * [ng-tap](#ng-nap)
+    * [ng-tap](#ng-tap)
 * [Links](#links)
 * [Tests](#tests)
 * [Contributing](#contributing)
