@@ -21,7 +21,6 @@ angular.module("ngTouch", [])
 
             $element.bind("touchstart", onTouchStart);
             function onTouchStart(event) {
-                event.preventDefault();
                 $element.bind("touchmove", onTouchMove);
                 $element.bind("touchend", onTouchEnd);
             }
@@ -31,7 +30,6 @@ angular.module("ngTouch", [])
                 $scope.$apply(method);
             }
             function onTouchEnd(event) {
-                event.preventDefault();
                 $element.unbind("touchmove", onTouchMove);
                 $element.unbind("touchend", onTouchEnd);
             }
