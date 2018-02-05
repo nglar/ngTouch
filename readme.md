@@ -9,6 +9,7 @@ A angular module to add directives for touch devices.
 [![Dependencies](https://img.shields.io/david/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch)
 [![Dev Dependencies](https://img.shields.io/david/dev/nglar/ngTouch.svg)](https://github.com/nglar/ngTouch)
 [![License](https://img.shields.io/bower/l/ngtouch.svg)](https://github.com/nglar/ngTouch)
+[![Open Source Helpers](https://www.codetriage.com/nglar/ngtouch/badges/users.svg)](https://www.codetriage.com/nglar/ngtouch)
 
 * [Info](#info)
 * [Installing/Loading](#installingloading)
